@@ -1,3 +1,9 @@
 def is_palindrome_iterative(word):
-    """Faça o código aqui."""
-    raise NotImplementedError
+    palindromo = reversed(word[: len(word)])
+
+    if len(word) == 0:
+        return False
+    elif word == "".join(palindromo):
+        return True
+
+    return False
